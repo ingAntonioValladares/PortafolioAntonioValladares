@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MI PERFIL</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  </head>
+
+  <body>
+    <!-- ULTIMA ACTUALIZACION: 01/11/2025 -->
+    <!-- HEADER -->
+
+    <header class="navegacion">
+      <a href="index.html"><p class="tracking-in-expand_2">AV</p></a>
+      <ul class="propiedades_navegacion">
+        <li><a href="#sobre-mi">Sobre Mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><button class="toggle-dark-mode">🌙</button></li>
+        <!-- <li><button id="boton-idioma">Cambiar a Inglés</button></li> -->
+      </ul>
+      <svg
+        id="hamburguesa"
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 -960 960 960"
+        width="24px"
+        fill="#1f1f1f"
+      >
+        <path
+          d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+        />
+      </svg>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+      <div class="presentacion contenedor">
+        <div class="presentacionDescripcion">
+          <!-- class="bounce" -->
+          <h1>
+            Cada línea de código es una oportunidad para transformar una
+            <span class="resaltado">idea</span> en una
+            <span class="resaltado">experiencia</span> visual memorable.
+          </h1>
+          <p>
+            ! Hola !. Soy
+            <span class="tracking-in-expand_2" style="font-size: 2.8rem"
+              >Antonio Valladares.</span
+            ><br />
+            Te doy la bienvenida a conocerme un poquito más. <br />
+            <span class="tracking-in-expand_1" style="font-weight: 900"
+              >Saludos!!!</span
+            >
+          </p>
+        </div>
+        <!-- .presentacionDescripcion -->
+        <div class="presentacionImagen">
+          <img src="img/AntonioValladares2.jpg" alt="Antonio Valladares" />
+        </div>
+      </div>
+    </main>
+
+    <!-- INFORMACIÓN SOBRE MI (MAS DETALLES) -->
+    <section id="sobre-mi">
+      <div class="contenedor sobreMi">
+        <div class="contenidoSobreMi">
+          <div class="sobreMiTitulo">
+            <h2>
+              Sobre
+              <span class="double">mi</span>
+            </h2>
+          </div>
+          <div class="fraseSobreMi tada">
+            <p class="henryAvery">
+              "Sic parvis magna"
+              <span style="color: black"
+                >~°~ la grandeza nace de pequeños comienzos ~°~ <br /><cite
+                  class="autor"
+                  >Sir Francis Drake</cite
+                ></span
+              >
+            </p>
+          </div>
+          <div class="contenidoSobreMi_descripcion">
+            <p>
+              Soy una persona
+              <span class="resaltado_opcion2">autodidacta</span>, con
+              <span class="resaltado_opcion2">iniciativa</span> para
+              <span class="resaltado_opcion2">aprender</span> de forma continua.
+              Cuando enfrento un <span class="resaltado_opcion2">reto</span>,
+              <span class="resaltado_opcion2">busco respuestas</span>,
+              <span class="resaltado_opcion2">hago preguntas</span> y no me
+              detengo hasta encontrar la
+              <span class="resaltado_opcion2">mejor solución</span>.
+            </p>
+            <p>
+              Me caracterizo por mi
+              <span class="resaltado_opcion2">compromiso</span>,
+              <span class="resaltado_opcion2">responsabilidad</span> y
+              <span class="resaltado_opcion2"
+                >facilidad para trabajar en equipo</span
+              >, siempre con el objetivo de alcanzar
+              <span class="resaltado_opcion2">resultados de calidad</span>.
+            </p>
+          </div>
+          <div class="contacto">
+            <!-- id="saberMas" -->
+            <a id="saberMas" class="boton-contacto">Saber más...</a>
+            <!-- AL HACE CLICK EN BOTON CREAR UN CARD FLOTANTE -->
+            <div class="modal_SaberMas">
+              <!-- inyectar datos adicionales -->
+            </div>
+          </div>
+        </div>
+        <div class="contenidoAdicionnal">
+          <div class="contenidoUniversidad">
+            <h3>Mi <span class="double">Universidad</span></h3>
+            <p>Universidad Católica Santo Toribio de Mogrovejo - USAT</p>
+          </div>
+          <div class="redes_sociales">
+            <h3>Conecta <span class="double">Conmigo</span></h3>
+            <div class="redes">
+              <div class="up">
+                <!-- github -->
+                <a
+                  href="https://github.com/ingAntonioValladares"
+                  target="_blank"
+                  class="card1"
+                >
+                  <svg
+                    class="github"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M9 19c-4.5 1.5 -4.5 -2.5 -6 -3m12 5v-3.87a3.37 3.37 0 0 0 -.94 -2.61c3.14 -.35 
+         6.44 -1.54 6.44 -7a5.44 5.44 0 0 0 -1.5 -3.75a5.07 5.07 0 0 0 -.09 -3.77s-1.18 
+         -.35 -3.91 1.48a13.38 13.38 0 0 0 -7 0c-2.73 -1.83 -3.91 -1.48 -3.91 -1.48a5.07 
+         5.07 0 0 0 -.09 3.77a5.44 5.44 0 0 0 -1.5 3.75c0 5.42 3.3 6.61 6.44 7a3.37 3.37 
+         0 0 0 -.94 2.61v3.87"
+                    />
+                  </svg>
+                </a>
+                <!-- wasap -->
+                <a
+                  href="https://wa.me/51942066667?text=Hola%20Antonio,%20he%20visto%20tu%20portafolio%20y%20me%20gustaría%20contactarte."
+                  target="_blank"
+                  class="card2"
+                >
+                  <svg
+                    class="wasap"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                    <path
+                      d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div class="down">
+                <!-- gmail -->
+                <a
+                  href="https://mail.google.com/mail/?view=cm&to=l.valladares.briones@gmail.com&su=Consulta%20sobre%20tu%20portafolio&body=Hola%20Antonio,%20he%20visto%20tu%20trabajo%20y%20me%20gustaría%20contactarte..."
+                  target="_blank"
+                  class="card3"
+                >
+                  <svg
+                    class="gmail"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-brand-gmail"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"
+                    />
+                    <path d="M3 7l9 6l9 -6" />
+                  </svg>
+                </a>
+                <!-- instagram -->
+                <a
+                  href="https://www.instagram.com/antonio_98723/"
+                  target="_blank"
+                  class="card4"
+                >
+                  <svg
+                    class="instagram"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <rect x="4" y="4" width="16" height="16" rx="4" />
+                    <circle cx="12" cy="12" r="3" />
+                    <path d="M16.5 7.5v.01" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MIS PROYECTOS -->
+    <section id="proyectos" class="contenedor">
+      <div class="misProyectosWeb">
+        <div class="verMas">
+          <div class="tituloMisProyectos">
+            <h2>Mis <span class="double">Proyectos</span></h2>
+          </div>
+          <p class="margen-top">
+            Una mirada a mis proyectos: una mezcla de
+            <span class="resaltado_opcion2">ideas</span>,
+            <span class="resaltado_opcion2">color</span> y
+            <span class="resaltado_opcion2">técnica</span>.
+            <!-- Cada negocio, cada proyecto, cada idea merece ser una página web. -->
+          </p>
+        </div>
+        <!-- BIENES RAICES -->
+        <div class="verProyecto inclinacion">
+          <div class="proyectoTitulo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-home"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
+              <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+              <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+            </svg>
+            <h3>Proyecto Bienes Raices</h3>
+          </div>
+          <p class="margen-top">
+            <span class="resaltado_opcion2">Transforma</span> tu presencia en
+            línea y <span class="resaltado_opcion2">conecta</span> con tus
+            clientes ideales en el mundo de los bienes raices. Te presento un
+            diseño <span class="resaltado_opcion2">responsivo</span>, fácil de
+            navegar, con galerías interactivas y mucho más.
+          </p>
+          <!-- <p>Desarrollado con:<br />HTML + CSS</p> -->
+          <a
+            target="_blank"
+            href="https://ventacasas.netlify.app/"
+            class="btn type centrarTexto"
+            >Ver proyecto</a
+          >
+        </div>
+        <!-- GERCETUR -->
+        <div class="verProyecto">
+          <div class="proyectoTitulo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-globe"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M7 9a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+              <path d="M5.75 15a8.015 8.015 0 1 0 9.25 -13" />
+              <path d="M11 17v4" />
+              <path d="M7 21h8" />
+            </svg>
+            <h3>Proyecto Gercetur</h3>
+          </div>
+          <p class="margen-top">
+            Amar nuestra
+            <span class="resaltado_opcion2">cultura</span> empieza por
+            conocerla. Estoy feliz de evidenciar en el mundo digital los
+            productos de calidad que la ciudad de
+            <span class="resaltado_opcion2">Chiclayo</span> nos ofrece. Podrás
+            informarte de la riqueza de nuestros cultivos y la
+            <span class="resaltado_opcion2">pasión</span> de nuestros
+            agricultores en cada cosecha.
+          </p>
+          <!-- <p>Desarrollado con:<br />HTML + CSS</p> -->
+          <a
+            target="_blank"
+            href="https://gercetur-region-lambayeque.netlify.app/"
+            class="btn type centrarTexto"
+            >Ver proyecto</a
+          >
+        </div>
+        <!-- ADOPTA MASCOTAS -->
+        <div class="verProyecto">
+          <div class="proyectoTitulo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-book"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+              <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+              <path d="M3 6l0 13" />
+              <path d="M12 6l0 13" />
+              <path d="M21 6l0 13" />
+            </svg>
+            <h3>Proyecto Salvando Vidas</h3>
+          </div>
+          <p class="margen-top">
+            Cada historia de
+            <span class="resaltado_opcion2">adopción</span> merece ser
+            recordada. En esta plataforma podrás registrar las mascotas
+            adoptadas y los datos de quienes les dieron un
+            <span class="resaltado_opcion2">nuevo hogar</span>.
+            <!--Un sistema con
+            validaciones completas que garantizan
+            <span class="resaltado_opcion2">seguridad</span> y precisión. -->
+            Asimismo, el sistema cuenta con una
+            <span class="resaltado_opcion2">tabla interactiva</span> que
+            facilita la actualización de la información.
+          </p>
+          <a
+            target="_blank"
+            href="https://adoptasalvavidas.netlify.app/"
+            class="btn type centrarTexto"
+            >Ver proyecto</a
+          >
+        </div>
+        <!-- CLUB DE LECTURA -->
+        <div class="verProyecto">
+          <div class="proyectoTitulo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-book"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+              <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+              <path d="M3 6l0 13" />
+              <path d="M12 6l0 13" />
+              <path d="M21 6l0 13" />
+            </svg>
+            <h3>Proyecto Club de Lectura</h3>
+          </div>
+          <p class="margen-top">
+            <span class="resaltado_opcion2">Únete</span> a una comunidad de
+            amantes de los libros que disfrutan descubrir nuevos mundos, debatir
+            ideas apasionantes y compartir la magia de la lectura sobre
+            tecnologias
+            <span class="resaltado_opcion2">fronted y backend</span>. Cada
+            página es una aventura, aquí leemos, aprendemos y
+            <span class="resaltado_opcion2">construimos</span> juntos.
+          </p>
+          <!-- <p>Desarrollado con:<br />HTML + CSS + SASS + JS(DOM)</p> -->
+          <a
+            target="_blank"
+            href="https://boookgrupo.netlify.app"
+            class="btn type centrarTexto"
+            >Ver proyecto</a
+          >
+        </div>
+        <!-- CAFETERIA -->
+        <div class="verProyecto">
+          <div class="proyectoTitulo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-book"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+              <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+              <path d="M3 6l0 13" />
+              <path d="M12 6l0 13" />
+              <path d="M21 6l0 13" />
+            </svg>
+            <h3>Proyecto Café & Aroma</h3>
+          </div>
+          <p class="margen-top">
+            Cada taza cuenta una
+            <span class="resaltado_opcion2">historia de sabor</span>. En nuestra
+            <span class="resaltado_opcion2">cafetería</span> encontrarás una
+            cuidada selección de cafés artesanales, postres frescos y bebidas
+            especiales. Además contamos con una sección de
+            <span class="resaltado_opcion2">auspiciadores</span> que comparten
+            nuestra pasión por el
+            <span class="resaltado_opcion2">buen café</span> y los
+            <span class="resaltado_opcion2">gratos momentos</span>.
+          </p>
+          <a
+            target="_blank"
+            href="https://best-coffee-peru.netlify.app/"
+            class="btn type centrarTexto"
+            >Ver proyecto</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades">
+      <section class="contenido_habilidades contenedor">
+        <div class="titulo_habilidades">
+          <h2>COMPETENCIAS <span class="double">TÉCNICAS</span></h2>
+          <p>
+            Tecnologías y herramientas que domino para crear soluciones web
+            excepcionales.
+          </p>
+        </div>
+        <ul class="barra_habilidades">
+          <li class="barra_todas">Todas</li>
+          <li class="barra_frontend">Frontend</li>
+          <li class="barra_backend">Backend</li>
+          <li class="barra_herramientas">Herramientas</li>
+        </ul>
+        <div class="contenido_tecnologias_herramientas">
+          <!-- Al hacer click se listan las tecnologías o herramientas -->
+          <ul class="listaTecnologias">
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>MySQL</li>
+            <li>PostgreSQL</li>
+            <li>SQLite</li>
+            <li>HTML5</li>
+            <li>CSS3 / Sass</li>
+            <li>Flexbox y Grid</li>
+            <li>Responsive Design / Media Queries</li>
+            <li>DOM y eventos</li>
+            <li>Fetch</li>
+            <li>JSON</li>
+            <li>Git y GitHub</li>
+            <li>VS Code</li>
+            <li>NPM</li>
+            <li>Gulp</li>
+            <li>Netlify</li>
+            <li>Postman</li>
+          </ul>
+        </div>
+      </section>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+      <section class="contenido-contacto contenedor">
+        <div class="tituloContacto">
+          <h2>TRABAJEMOS <span class="double">JUNTOS</span></h2>
+          <p>
+            ¿Tienes un proyecto en mente? ¡Hablemos! Estoy siempre abierto a
+            nuevas oportunidades.
+          </p>
+        </div>
+        <section class="info-contacto">
+          <div class="email">
+            <p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#1f1f1f"
+              >
+                <path
+                  d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"
+                />
+              </svg>
+              Email
+            </p>
+            <span>l.valladares.briones<strong>@gmail.com</strong></span>
+          </div>
+          <div class="telefono">
+            <p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#1f1f1f"
+              >
+                <path
+                  d="M760-480q0-117-81.5-198.5T480-760v-80q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480h-80Zm-160 0q0-50-35-85t-85-35v-80q83 0 141.5 58.5T680-480h-80Zm198 360q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"
+                />
+              </svg>
+              Teléfono
+            </p>
+            <span
+              ><strong style="font-size: 2.2rem"> +51 </strong>942 066 667</span
+            >
+          </div>
+          <div class="ubicacion">
+            <p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#1f1f1f"
+              >
+                <path
+                  d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"
+                />
+              </svg>
+              Ubicación
+            </p>
+            <span><strong>Chiclayo</strong>, Perú</span>
+          </div>
+        </section>
+      </section>
+    </section>
+    <form id="contact-form" class="formulario contenedor">
+      <label for="name">Tu nombre:</label>
+      <input type="text" id="name" name="from_name" required /><br /><br />
+
+      <label for="email">Correo:</label>
+      <input type="email" id="email" name="from_email" required /><br /><br />
+
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message" required></textarea><br /><br />
+
+      <button type="submit">Enviar Mensaje</button>
+    </form>
+
+    <!-- FOOTER  -->
+    <footer class="footer">
+      <div class="contenido-footer">
+        <ul class="agradecimiento">
+          <li class="creador">Antonio Valladares</li>
+          <li>
+            Si llegaste hasta aquí, gracias por acompañarme en este recorrido.
+          </li>
+          <li>Si algo de mi trabajo te inspiró, ya valió la pena.</li>
+        </ul>
+        <ul class="propiedades_navegacionFooter">
+          <li><a href="#sobre-mi">Sobre Mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <!-- <a href="index.html"><p class="tracking-in-expand_2 tamaño">AV</p></a> -->
+      </div>
+      <p class="fin">Hecho con 🖤 por Antonio Valladares © 2025</p>
+    </footer>
+    <!---------------------------------- PARA EL FUTURO TODO EN INGLES --------------------------------- -->
+    <!---------------------------------- PARA EL FUTURO TODO EN INGLES  --------------------------------- -->
+    <!---------------------------------- PARA EL FUTURO TODO EN INGLES --------------------------------- -->
+    <!---------------------------------- PARA EL FUTURO TODO EN INGLES  --------------------------------- -->
+    <!-- <section id="contenido-INGLES"> -->
+    <!-- CONTENIDO PRINCIPAL -->
+    <!-- <main>
+        <div class="presentacion contenedor">
+          <div class="presentacionDescripcion">
+            <h1>
+              Every line of code is an opportunity to turn an
+              <span class="resaltado">idea</span> into a
+              <span class="resaltado">visual</span> experience worth
+              remembering.
+            </h1>
+            <p>
+              Hi there! I'm
+              <span class="tracking-in-expand_2" style="font-size: 2.8rem"
+                >Antonio Valladares.</span
+              ><br />
+              Welcome — I’m glad you’re here and I’d love for you <br />to get
+              to know me a little better. <br />
+              <span class="tracking-in-expand_1" style="font-weight: 900"
+                >Cheers!!!</span
+              >
+            </p>
+          </div>
+          <div class="presentacionImagen">
+            <img src="img/AntonioValladares2.jpg" alt="Antonio Valladares" />
+          </div>
+        </div>
+      </main> -->
+    <!-- INFORMACION SOBRE MI  -->
+    <!-- <section id="about-me">
+        <div class="contenedor sobreMi">
+          <div class="contenidoSobreMi">
+            <div class="sobreMiTitulo">
+              <h2>
+                About
+                <span class="double">Me</span>
+              </h2>
+            </div>
+            <div class="fraseSobreMi tada">
+              <p class="henryAvery">
+                "Sic parvis magna"
+                <span style="color: black"
+                  >~°~ greatness is born from small beginnings ~°~ <br /><cite
+                    class="autor"
+                    >Sir Francis Drake</cite
+                  ></span
+                >
+              </p>
+            </div>
+            <div class="contenidoSobreMi_descripcion">
+              <p>
+                I’m a
+                <span class="resaltado_opcion2">self-taught</span> person with
+                strong <span class="resaltado_opcion2">initiative</span> and a
+                constant drive to <span class="resaltado_opcion2">learn</span>.
+                Whenever I face a
+                <span class="resaltado_opcion2">challenge</span>, I
+                <span class="resaltado_opcion2">seek answers</span>,
+                <span class="resaltado_opcion2">ask questions</span>, and don’t
+                stop until I find the
+                <span class="resaltado_opcion2">best solution</span>.
+              </p>
+              <p>
+                I’m known for my
+                <span class="resaltado_opcion2">commitment</span>,
+                <span class="resaltado_opcion2">responsibility</span>, and my
+                ability to
+                <span class="resaltado_opcion2">work well in a team</span>,
+                always aiming to achieve
+                <span class="resaltado_opcion2">high-quality results</span>.
+              </p>
+            </div>
+            <div class="contacto">
+
+              <a id="saberMasINGLES" class="boton-contacto">Learn more...</a>
+              <div class="modal_SaberMasINGLES">
+              </div>
+            </div>
+          </div>
+
+          <div class="contenidoAdicionnal">
+            <div class="contenidoUniversidad">
+              <h3>My <span class="double">University</span></h3>
+              <p>Universidad Católica Santo Toribio de Mogrovejo - USAT</p>
+            </div>
+            <div class="redes_sociales">
+              <h3>My <span class="double">Socials</span></h3>
+              <div class="redes">
+                <div class="up">
+                  <a
+                    href="https://github.com/ingAntonioValladares"
+                    target="_blank"
+                    class="card1"
+                  >
+                    <svg
+                      class="github"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M9 19c-4.5 1.5 -4.5 -2.5 -6 -3m12 5v-3.87a3.37 3.37 0 0 0 -.94 -2.61c3.14 -.35 
+       6.44 -1.54 6.44 -7a5.44 5.44 0 0 0 -1.5 -3.75a5.07 5.07 0 0 0 -.09 -3.77s-1.18 
+       -.35 -3.91 1.48a13.38 13.38 0 0 0 -7 0c-2.73 -1.83 -3.91 -1.48 -3.91 -1.48a5.07 
+       5.07 0 0 0 -.09 3.77a5.44 5.44 0 0 0 -1.5 3.75c0 5.42 3.3 6.61 6.44 7a3.37 3.37 
+       0 0 0 -.94 2.61v3.87"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="https://wa.me/51942066667?text=Hi%20Antonio,%20I%20saw%20your%20portfolio%20and%20I’d%20like%20to%20get%20in%20touch."
+                    target="_blank"
+                    class="card2"
+                  >
+                    <svg
+                      class="wasap"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                      <path
+                        d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="down">
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&to=l.valladares.briones@gmail.com&su=Inquiry%20about%20your%20portfolio&body=Hi%20Antonio,%20I%20came%20across%20your%20work%20and%20would%20love%20to%20get%20in%20touch..."
+                    target="_blank"
+                    class="card3"
+                  >
+                    <svg
+                      class="gmail"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-brand-gmail"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"
+                      />
+                      <path d="M3 7l9 6l9 -6" />
+                    </svg>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/antonio_98723/"
+                    target="_blank"
+                    class="card4"
+                  >
+                    <svg
+                      class="instagram"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <rect x="4" y="4" width="16" height="16" rx="4" />
+                      <circle cx="12" cy="12" r="3" />
+                      <path d="M16.5 7.5v.01" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+    <!-- MIS PROYECTOS -->
+    <!-- <section id="proyectos" class="contenedor">
+        <div class="misProyectosWeb">
+          <div class="verMas">
+            <div class="tituloMisProyectos">
+              <h2>My <span class="double">Projects</span></h2>
+            </div>
+            <p class="margen-top">
+              A glimpse into my projects: a blend of
+              <span class="resaltado_opcion2">ideas</span>,
+              <span class="resaltado_opcion2">color</span>, and
+              <span class="resaltado_opcion2">technique</span>.
+            </p>
+          </div>
+
+          <div class="verProyecto inclinacion">
+            <div class="proyectoTitulo">
+              <h3>Real Estate Project</h3>
+            </div>
+            <p class="margen-top">
+              <span class="resaltado_opcion2">Transform</span> your online
+              presence and <span class="resaltado_opcion2">connect</span> with
+              your ideal clients in the real estate world. I present a
+              <span class="resaltado_opcion2">responsive</span> design that’s
+              easy to navigate, featuring interactive galleries and much more.
+            </p>
+            <a
+              target="_blank"
+              href="https://ventacasas.netlify.app/"
+              class="btn type centrarTexto"
+              >View project</a
+            >
+          </div>
+
+          <div class="verProyecto">
+            <div class="proyectoTitulo">
+              <h3>Gercetur Project</h3>
+            </div>
+            <p class="margen-top">
+              Loving our <span class="resaltado_opcion2">culture</span> starts
+              with understanding it. I’m happy to showcase, in the digital
+              world, the quality products offered by the city of
+              <span class="resaltado_opcion2">Chiclayo</span>. Learn about the
+              richness of our crops and the
+              <span class="resaltado_opcion2">passion</span> our farmers bring
+              to every harvest.
+            </p>
+            <a
+              target="_blank"
+              href="https://gercetur-region-lambayeque.netlify.app/"
+              class="btn type centrarTexto"
+              >View project</a
+            >
+          </div>
+
+          <div class="verProyecto">
+            <div class="proyectoTitulo">
+              <h3>Saving Lives Project</h3>
+            </div>
+            <p class="margen-top">
+              Every <span class="resaltado_opcion2">adoption</span> story
+              deserves to be remembered. On this platform, you can register
+              adopted pets and the details of those who gave them a
+              <span class="resaltado_opcion2">new home</span>. The system also
+              includes an
+              <span class="resaltado_opcion2">interactive table</span>
+              that makes updating information quick and simple.
+            </p>
+            <a
+              target="_blank"
+              href="https://adoptasalvavidas.netlify.app/"
+              class="btn type centrarTexto"
+              >View project</a
+            >
+          </div>
+
+          <div class="verProyecto">
+            <div class="proyectoTitulo">
+              <h3>Book Club Project</h3>
+            </div>
+            <p class="margen-top">
+              <span class="resaltado_opcion2">Join</span> a community of book
+              lovers who enjoy discovering new worlds, debating exciting ideas,
+              and sharing the magic of reading about
+              <span class="resaltado_opcion2">frontend</span> and
+              <span class="resaltado_opcion2">backend</span> technologies. Each
+              page is an adventure — here we read, learn, and
+              <span class="resaltado_opcion2">build</span> together.
+            </p>
+            <a
+              target="_blank"
+              href="https://boookgrupo.netlify.app"
+              class="btn type centrarTexto"
+              >View project</a
+            >
+          </div>
+
+          <div class="verProyecto">
+            <div class="proyectoTitulo">
+              <h3>Café & Aroma Project</h3>
+            </div>
+            <p class="margen-top">
+              Every cup tells a
+              <span class="resaltado_opcion2">flavor story</span>. In our
+              <span class="resaltado_opcion2">coffee shop</span>, you’ll find a
+              curated selection of artisanal coffees, fresh desserts, and
+              special drinks. We also feature
+              <span class="resaltado_opcion2">sponsors</span> who share our
+              passion for
+              <span class="resaltado_opcion2">great coffee</span> and
+              <span class="resaltado_opcion2">pleasant moments</span>.
+            </p>
+            <a
+              target="_blank"
+              href="https://best-coffee-peru.netlify.app/"
+              class="btn type centrarTexto"
+              >View project</a
+            >
+          </div>
+        </div>
+      </section> -->
+    <!-- HABILIDADES -->
+    <!-- <section id="habilidades" class="contenido_habilidades contenedor">
+        <div class="titulo_habilidades">
+          <span class="double">Skills</span>
+          <p>
+            Technologies and tools I master to create exceptional web solutions.
+          </p>
+        </div>
+        <ul class="barra_habilidades">
+          <li class="barra_todasINGLES">All</li>
+          <li class="barra_frontendINGLES">Frontend</li>
+          <li class="barra_backendINGLES">Backend</li>
+          <li class="barra_herramientasINGLES">Tools</li>
+        </ul>
+        <div class="contenido_tecnologias_herramientasINGLES">
+          <ul class="listaTecnologias">
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>MySQL</li>
+            <li>PostgreSQL</li>
+            <li>SQLite</li>
+            <li>HTML5</li>
+            <li>CSS3 / Sass</li>
+            <li>Flexbox and Grid</li>
+            <li>Responsive Design / Media Queries</li>
+            <li>DOM and Events</li>
+            <li>Fetch</li>
+            <li>JSON</li>
+            <li>Git and GitHub</li>
+            <li>VS Code</li>
+            <li>NPM</li>
+            <li>Gulp</li>
+            <li>Netlify</li>
+            <li>Postman</li>
+          </ul>
+        </div>
+      </section> -->
+    <!-- </section> -->
+    <script src="index.js"></script>
+  </body>
+</html>
