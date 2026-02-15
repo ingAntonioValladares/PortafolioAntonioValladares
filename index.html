@@ -1,10 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MI PERFIL</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   </head>
 
@@ -109,7 +121,7 @@
           </div>
           <div class="contacto">
             <!-- id="saberMas" -->
-            <a id="saberMas" class="boton-contacto">Saber más...</a>
+            <!-- <a id="saberMas" class="boton-contacto">Saber más...</a> -->
             <!-- AL HACE CLICK EN BOTON CREAR UN CARD FLOTANTE -->
             <div class="modal_SaberMas">
               <!-- inyectar datos adicionales -->
@@ -156,7 +168,7 @@
                 </a>
                 <!-- wasap -->
                 <a
-                  href="https://wa.me/51942066667?text=Hola%20Antonio,%20he%20visto%20tu%20portafolio%20y%20me%20gustaría%20contactarte."
+                  href="https://wa.me/51912529457?text=Hola%20Antonio,%20he%20visto%20tu%20portafolio%20y%20me%20gustaría%20contactarte."
                   target="_blank"
                   class="card2"
                 >
@@ -210,7 +222,7 @@
                 </a>
                 <!-- instagram -->
                 <a
-                  href="https://www.instagram.com/antonio_98723/"
+                  href="https://www.instagram.com/antoniocodelife/"
                   target="_blank"
                   class="card4"
                 >
@@ -403,12 +415,11 @@
           </div>
           <p class="margen-top">
             PowerFIT Gym es una plataforma web diseñada para gestionar productos
-            fitness mediante un flujo de compra altamente optimizado, asegurando
-            una
+            fitness mediante un
             <span class="resaltado_opcion2"
-              >interfaz reactiva sin frameworks</span
-            >. Este desarrollo demuestra dominio de manipulación del DOM,
-            gestión de estados complejos y un enfoque técnico orientado a
+              >flujo de compra altamente optimizado </span
+            >. Este desarrollo demuestra gestión de estados complejos y un
+            enfoque técnico orientado a
             <span class="resaltado_opcion2">escalabilidad</span>
           </p>
           <!-- <p>Desarrollado con:<br />HTML + CSS + SASS + JS(DOM)</p> -->
@@ -451,8 +462,7 @@
             especiales. Además contamos con una sección de
             <span class="resaltado_opcion2">auspiciadores</span> que comparten
             nuestra pasión por el
-            <span class="resaltado_opcion2">buen café</span> y los
-            <span class="resaltado_opcion2">gratos momentos</span>.
+            <span class="resaltado_opcion2">buen café</span>.
           </p>
           <a
             target="_blank"
@@ -475,7 +485,7 @@
           </p>
         </div>
         <ul class="barra_habilidades">
-          <li class="barra_todas">Todas</li>
+          <!-- <li class="barra_todas">Todas</li> -->
           <li class="barra_frontend">Frontend</li>
           <li class="barra_backend">Backend</li>
           <li class="barra_herramientas">Herramientas</li>
@@ -483,27 +493,37 @@
         <div class="contenido_tecnologias_herramientas">
           <!-- Al hacer click se listan las tecnologías o herramientas -->
           <ul class="listaTecnologias">
-            <li>JavaScript</li>
-            <li>Java</li>
-            <li>MySQL</li>
-            <li>PostgreSQL</li>
-            <li>SQLite</li>
-            <li>HTML5</li>
-            <li>CSS3 / Sass</li>
-            <li>Flexbox y Grid</li>
-            <li>Responsive Design / Media Queries</li>
-            <li>DOM y eventos</li>
-            <li>Fetch</li>
-            <li>JSON</li>
-            <li>Git y GitHub</li>
-            <li>VS Code</li>
-            <li>NPM</li>
-            <li>Gulp</li>
-            <li>Netlify</li>
-            <li>Postman</li>
+            <li>HTML5 semántico</li>
+            <li>CSS3 moderno</li>
+            <li>Sass <br />(estructura y variables)</li>
+            <li>Layouts con Flexbox y Grid</li>
+            <li>
+              Diseño responsive <br />
+              (mobile-first, media queries)
+            </li>
+            <li>Manipulación del DOM y eventos</li>
+            <li>Delegación de eventos</li>
+            <li>Consumo de APIs con Fetch</li>
+            <li>Arquitectura frontend <br />(fundamentos)</li>
           </ul>
         </div>
       </section>
+      <!-- COMPETENCIAS TÉCNICAS -->
+      <section class="arquitectura_principios contenedor">
+        <h2>ARQUITECTURA y <span class="double">PRINCIPIOS</span></h2>
+        <p>
+          Porque las tecnologías cambian. Los principios te acompañan toda la
+          carrera.
+        </p>
+        <ul class="principiosNoNegociables">
+          <li>Single Responsibility Principle (SRP)</li>
+          <li>Modularización del código</li>
+          <li>Arquitectura de componentes</li>
+          <li>Separación de responsabilidades</li>
+          <li>Flujo de datos y capas</li>
+        </ul>
+      </section>
+      <!-- ARQUITECTURA Y PRINCIPIOS -->
     </section>
 
     <!-- CONTACTO -->
@@ -532,26 +552,7 @@
               </svg>
               Email
             </p>
-            <span>l.valladares.briones<strong>@gmail.com</strong></span>
-          </div>
-          <div class="telefono">
-            <p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#1f1f1f"
-              >
-                <path
-                  d="M760-480q0-117-81.5-198.5T480-760v-80q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480h-80Zm-160 0q0-50-35-85t-85-35v-80q83 0 141.5 58.5T680-480h-80Zm198 360q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"
-                />
-              </svg>
-              Teléfono
-            </p>
-            <span
-              ><strong style="font-size: 2.2rem"> +51 </strong>942 066 667</span
-            >
+            <span>luis23ing<strong>@gmail.com</strong></span>
           </div>
           <div class="ubicacion">
             <p>
@@ -604,7 +605,7 @@
         </ul>
         <!-- <a href="index.html"><p class="tracking-in-expand_2 tamaño">AV</p></a> -->
       </div>
-      <p class="fin">Hecho con 🖤 por Antonio Valladares © 2025</p>
+      <p class="fin">Hecho con 🖤 por Antonio Valladares © 2026</p>
     </footer>
     <!---------------------------------- PARA EL FUTURO TODO EN INGLES --------------------------------- -->
     <!---------------------------------- PARA EL FUTURO TODO EN INGLES  --------------------------------- -->

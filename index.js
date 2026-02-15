@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Busca si ya existe el contenedor
     const contenedorExistente = document.querySelector(
-      ".contenedor-hamburguesa"
+      ".contenedor-hamburguesa",
     );
 
     if (contenedorExistente) {
@@ -139,124 +139,124 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   /* ------------------------- SABER MAS --------------------- */
-  const boton_SaberMas = document.querySelector("#saberMas");
-  const modal = document.querySelector(".modal_SaberMas");
+  // const boton_SaberMas = document.querySelector("#saberMas");
+  // const modal = document.querySelector(".modal_SaberMas");
 
-  boton_SaberMas.addEventListener("click", () => {
-    modal_SaberMas(antonioInfo);
-    const body = document.querySelector("body");
-    body.classList.add("overflow-hidden");
-  });
+  // boton_SaberMas.addEventListener("click", () => {
+  //   modal_SaberMas(antonioInfo);
+  //   const body = document.querySelector("body");
+  //   body.classList.add("overflow-hidden");
+  // });
   // 👇 Escucha los clics en el fondo del modal
-  modal.addEventListener("click", (e) => {
-    // Si el clic fue directamente sobre el fondo (no sobre el contenido)
-    if (e.target === modal) {
-      modal.classList.remove("activo");
-      body.classList.remove("overflow-hidden");
-    }
-  });
+  // modal.addEventListener("click", (e) => {
+  //   // Si el clic fue directamente sobre el fondo (no sobre el contenido)
+  //   if (e.target === modal) {
+  //     modal.classList.remove("activo");
+  //     body.classList.remove("overflow-hidden");
+  //   }
+  // });
 
-  function modal_SaberMas(objeto) {
-    // Referencia al modal ya creado en el HTML
-    // Limpia el contenido anterior
-    modal.innerHTML = "";
+  // function modal_SaberMas(objeto) {
+  //   // Referencia al modal ya creado en el HTML
+  //   // Limpia el contenido anterior
+  //   modal.innerHTML = "";
 
-    const contenido = document.createElement("div");
-    contenido.classList.add("modal_contenido");
+  //   const contenido = document.createElement("div");
+  //   contenido.classList.add("modal_contenido");
 
-    // Limpia el contenido anterior
-    modal.innerHTML = "";
+  //   // Limpia el contenido anterior
+  //   modal.innerHTML = "";
 
-    // Botón cerrar
-    const btnCerrar = document.createElement("button");
-    btnCerrar.textContent = "✖";
-    btnCerrar.classList.add("cerrar_modal");
-    btnCerrar.addEventListener("click", () => {
-      modal.classList.remove("activo");
-      body.classList.remove("overflow-hidden");
-    });
+  //   // Botón cerrar
+  //   const btnCerrar = document.createElement("button");
+  //   btnCerrar.textContent = "✖";
+  //   btnCerrar.classList.add("cerrar_modal");
+  //   btnCerrar.addEventListener("click", () => {
+  //     modal.classList.remove("activo");
+  //     body.classList.remove("overflow-hidden");
+  //   });
 
-    // // Agregar título
-    // const titulo = document.createElement("h2");
-    // titulo.textContent = objeto.nombre;
-    // contenido.appendChild(titulo);
+  //   // // Agregar título
+  //   // const titulo = document.createElement("h2");
+  //   // titulo.textContent = objeto.nombre;
+  //   // contenido.appendChild(titulo);
 
-    // Estado civil
-    const estado = document.createElement("p");
-    estado.classList.add("titulo-dorado");
-    estado.innerHTML = `<strong>- Estado civil:</strong> <span>${objeto.estadoCivil}</span>`;
-    contenido.appendChild(estado);
+  //   // Estado civil
+  //   const estado = document.createElement("p");
+  //   estado.classList.add("titulo-dorado");
+  //   estado.innerHTML = `<strong>- Estado civil:</strong> <span>${objeto.estadoCivil}</span>`;
+  //   contenido.appendChild(estado);
 
-    // Personalidad
-    const personalidad = document.createElement("p");
-    personalidad.classList.add("titulo-dorado");
-    personalidad.innerHTML = `<strong>- Personalidad:</strong> <span>${objeto.personalidad}</span>`;
-    contenido.appendChild(personalidad);
+  //   // Personalidad
+  //   const personalidad = document.createElement("p");
+  //   personalidad.classList.add("titulo-dorado");
+  //   personalidad.innerHTML = `<strong>- Personalidad:</strong> <span>${objeto.personalidad}</span>`;
+  //   contenido.appendChild(personalidad);
 
-    // Hobbies
-    const hobbies = document.createElement("p");
-    hobbies.classList.add("titulo-dorado");
-    hobbies.innerHTML = `<strong>- Hobbies:</strong> <span>${objeto.hobbies.join(
-      ", "
-    )}</span>`;
-    contenido.appendChild(hobbies);
+  //   // Hobbies
+  //   const hobbies = document.createElement("p");
+  //   hobbies.classList.add("titulo-dorado");
+  //   hobbies.innerHTML = `<strong>- Hobbies:</strong> <span>${objeto.hobbies.join(
+  //     ", ",
+  //   )}</span>`;
+  //   contenido.appendChild(hobbies);
 
-    // Videojuegos
-    const juegos = document.createElement("p");
-    juegos.classList.add("titulo-dorado");
-    juegos.innerHTML = `<strong>- Videojuegos favoritos:</strong> <span>${objeto.videojuegosFavoritos.join(
-      ", "
-    )}</span>`;
-    contenido.appendChild(juegos);
+  //   // Videojuegos
+  //   const juegos = document.createElement("p");
+  //   juegos.classList.add("titulo-dorado");
+  //   juegos.innerHTML = `<strong>- Videojuegos favoritos:</strong> <span>${objeto.videojuegosFavoritos.join(
+  //     ", ",
+  //   )}</span>`;
+  //   contenido.appendChild(juegos);
 
-    // // Deportes favoritos
-    // const deportesTitulo = document.createElement("h3");
-    // deportesTitulo.textContent = "Deportes favoritos:";
-    // contenido.appendChild(deportesTitulo);
+  //   // // Deportes favoritos
+  //   // const deportesTitulo = document.createElement("h3");
+  //   // deportesTitulo.textContent = "Deportes favoritos:";
+  //   // contenido.appendChild(deportesTitulo);
 
-    // Fútbol
-    const futbol = document.createElement("div");
-    futbol.innerHTML = `
-    <p class="titulo-dorado"><strong>⚽ Mis equipos de fútbol favoritos:</strong></p>
-    <ul>${objeto.deportesFavoritos.futbol.equipos
-      .map((eq) => `<li>${eq}</li>`)
-      .join("")}</ul>
-  `;
-    contenido.appendChild(futbol);
+  //   // Fútbol
+  //   const futbol = document.createElement("div");
+  //   futbol.innerHTML = `
+  //   <p class="titulo-dorado"><strong>⚽ Mis equipos de fútbol favoritos:</strong></p>
+  //   <ul>${objeto.deportesFavoritos.futbol.equipos
+  //     .map((eq) => `<li>${eq}</li>`)
+  //     .join("")}</ul>
+  // `;
+  //   contenido.appendChild(futbol);
 
-    // Basket
-    const basket = document.createElement("div");
-    basket.innerHTML = `
-    <p class="titulo-dorado"><strong>🏀 Mis equipos de basket favoritos:</strong></p>
-    <ul>
-    <li>Equipo: ${objeto.deportesFavoritos.basket.equipo}</li>
-    <li>Jugador favorito: ${objeto.deportesFavoritos.basket.jugadorFavorito}</li>
-    </ul>
-  `;
-    contenido.appendChild(basket);
+  //   // Basket
+  //   const basket = document.createElement("div");
+  //   basket.innerHTML = `
+  //   <p class="titulo-dorado"><strong>🏀 Mis equipos de basket favoritos:</strong></p>
+  //   <ul>
+  //   <li>Equipo: ${objeto.deportesFavoritos.basket.equipo}</li>
+  //   <li>Jugador favorito: ${objeto.deportesFavoritos.basket.jugadorFavorito}</li>
+  //   </ul>
+  // `;
+  //   contenido.appendChild(basket);
 
-    // Curiosidades
-    const curiosidades = document.createElement("div");
-    curiosidades.innerHTML = `
-    <p class="titulo-dorado"><strong>- Curiosidades 🤓:</strong></p>
-    <p><span>${objeto.curiosidades.chisteGemelo}</span></p>
-    <p><span>${objeto.curiosidades.ironia}</span></p>
-  `;
-    contenido.appendChild(curiosidades);
+  //   // Curiosidades
+  //   const curiosidades = document.createElement("div");
+  //   curiosidades.innerHTML = `
+  //   <p class="titulo-dorado"><strong>- Curiosidades 🤓:</strong></p>
+  //   <p><span>${objeto.curiosidades.chisteGemelo}</span></p>
+  //   <p><span>${objeto.curiosidades.ironia}</span></p>
+  // `;
+  //   contenido.appendChild(curiosidades);
 
-    // Humor
-    const humor = document.createElement("p");
-    humor.classList.add("titulo-dorado");
-    humor.innerHTML = `<strong>💬 Humor:</strong> <span>${objeto.humor.chisteCodigo}</span>`;
-    contenido.appendChild(humor);
+  //   // Humor
+  //   const humor = document.createElement("p");
+  //   humor.classList.add("titulo-dorado");
+  //   humor.innerHTML = `<strong>💬 Humor:</strong> <span>${objeto.humor.chisteCodigo}</span>`;
+  //   contenido.appendChild(humor);
 
-    // Añadir botón y contenido al modal
-    // modal.appendChild(btnCerrar);
-    modal.appendChild(contenido);
+  //   // Añadir botón y contenido al modal
+  //   // modal.appendChild(btnCerrar);
+  //   modal.appendChild(contenido);
 
-    // Mostrar el modal
-    modal.classList.add("activo");
-  }
+  //   // Mostrar el modal
+  //   modal.classList.add("activo");
+  // }
 
   /*------------------------- SABER MAS PERO EN INGLES ---------------------- */
 
@@ -365,73 +365,71 @@ document.addEventListener("DOMContentLoaded", () => {
   // }
 
   /*  HABILIDADES  */
-  const barraTodas = document.querySelector(".barra_todas");
+  // const barraTodas = document.querySelector(".barra_todas");
   const barraFrontend = document.querySelector(".barra_frontend");
   const barraBackend = document.querySelector(".barra_backend");
   const barraHerramientas = document.querySelector(".barra_herramientas");
   const contenidoTecnologiasHerramientas = document.querySelector(
-    ".contenido_tecnologias_herramientas"
+    ".contenido_tecnologias_herramientas",
   );
-  barraTodas.addEventListener("click", () => {
-    contenidoTecnologiasHerramientas.innerHTML = `
-      <ul class="listaTecnologias">
-      <li>JavaScript</li>
-      <li>Java</li>
-      <li>MySQL</li>
-      <li>PostgreSQL</li>
-      <li>SQLite</li>
-      <li>HTML5</li>
-      <li>CSS3 / Sass</li>
-      <li>Flexbox y Grid</li>
-      <li>Responsive Design / Media Queries</li>
-      <li>DOM y eventos</li>
-      <li>Fetch</li>
-      <li>JSON</li>
-      <li>Git y GitHub</li>
-      <li>VS Code</li>
-      <li>NPM</li>
-      <li>Gulp</li>
-      <li>Netlify</li>
-      <li>Postman</li>
-      </ul>
-      `;
-  });
+  // barraTodas.addEventListener("click", () => {
+  //   contenidoTecnologiasHerramientas.innerHTML = `
+  //     <ul class="listaTecnologias">
+  //     <li>JavaScript</li>
+  //     <li>NodeJS</li>
+  //     <li>PostgreSQL</li>
+  //     <li>HTML5</li>
+  //     <li>CSS3 / Sass</li>
+  //     <li>Flexbox y Grid</li>
+  //     <li>Responsive Design / Media Queries</li>
+  //     <li>DOM y eventos</li>
+  //     <li>Fetch</li>
+  //     <li>JSON</li>
+  //     <li>Git y GitHub</li>
+  //     <li>VS Code</li>
+  //     <li>NPM</li>
+  //     <li>Gulp</li>
+  //     <li>Netlify</li>
+  //     <li>Postman</li>
+  //     </ul>
+  //     `;
+  // });
   barraFrontend.addEventListener("click", () => {
-    // console.log("todas");
     contenidoTecnologiasHerramientas.innerHTML = `
       <ul class="listaTecnologias">
-      <li>HTML5</li>
-      <li>CSS3 / Sass</li>
-      <li>Flexbox y Grid</li>
-      <li>Responsive Design / Media Queries</li>
-      <li>DOM y eventos</li>
-      <li>Fetch</li>
-      <li>JSON</li>
+        <li>HTML5 semántico</li>
+        <li>CSS3 moderno</li>
+        <li>Sass <br />(estructura y variables)</li>
+        <li>Layouts con Flexbox y Grid</li>
+        <li>Diseño responsive <br /> (mobile-first, media queries)</li>
+        <li>Manipulación del DOM y eventos</li>
+        <li>Delegación de eventos</li>
+        <li>Consumo de APIs con Fetch</li>
+        <li>Arquitectura frontend <br />(fundamentos)</li>
       </ul>
       `;
   });
   barraBackend.addEventListener("click", () => {
-    // console.log("backend");
     contenidoTecnologiasHerramientas.innerHTML = `
       <ul class="listaTecnologias">
-      <li>JavaScript</li>
-      <li>Java</li>
-      <li>MySQL</li>
-      <li>PostgreSQL</li>
-      <li>SQLite</li>
+        <li>JavaScript <br /> (servidor – fundamentos)</li>
+        <li>NodeJS <br /> (entorno)</li>
+        <li>APIs REST <br /> (conceptos y consumo)</li>
+        <li>PostgreSQL <br /> (queries básicas)</li>
+        <li>JSON <br /> (contratos de datos)</li>
+        <li>Asincronía <br /> (promesas, async/await)</li>
+        <li>Postman <br /> (pruebas de endpoints)</li>
       </ul>
       `;
   });
   barraHerramientas.addEventListener("click", () => {
-    // console.log("herramientas");
     contenidoTecnologiasHerramientas.innerHTML = `
       <ul class="listaTecnologias">
-      <li>Git y GitHub</li>
-      <li>VS Code</li>
-      <li>NPM</li>
-      <li>Gulp</li>
-      <li>Netlify</li>
-      <li>Postman</li>
+        <li>Git y GitHub</li>
+        <li>VS Code</li>
+        <li>NPM (gestión de dependencias)</li>
+        <li>Gulp</li>
+        <li>Netlify</li>
       </ul>
       `;
   });
@@ -543,7 +541,7 @@ document.addEventListener("DOMContentLoaded", () => {
           },
           function (error) {
             alert("Error al enviar: " + error.text);
-          }
+          },
         );
     });
 
