@@ -8,7 +8,7 @@ Si deseas contribuir, por favor abre un pull request.
 Este proyecto está bajo la licencia MIT.
 
 ## Contacto
-cel: 942 066 667
+cel: 912 529 457
 correo: l.valladares.briones@gmail.com
 
 
